@@ -1,0 +1,100 @@
+/* Fondo general futurista */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #08002b, #14004e, #1d005f);
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Título de la página */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 40px;
+    color: #00eaff;
+    text-shadow: 0 0 20px #00eaff;
+}
+
+/* Contenedor de tarjetas */
+.productos-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* Tarjeta futurista */
+.tarjeta {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #00eaff;
+    border-color: #00eaff;
+}
+
+/* Imagen del producto */
+.tarjeta img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+/* Nombre del producto */
+.tarjeta h2 {
+    margin: 15px 0 10px;
+    font-size: 1.5rem;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+/* Descripción */
+.tarjeta p {
+    color: #d9d9d9;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Precio */
+.precio {
+    font-size: 1.8rem;
+    color: #00ff9d;
+    margin: 15px 0;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff9d;
+}
+
+/* Botón comprar */
+.boton-comprar {
+    display: block;
+    width: 100%;
+    background: #00eaff;
+    padding: 12px 0;
+    text-align: center;
+    border-radius: 12px;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #00eaff;
+}
+
+.boton-comprar:hover {
+    background: #00ffea;
+    box-shadow: 0 0 25px #00ffea;
+}
