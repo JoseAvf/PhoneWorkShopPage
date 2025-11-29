@@ -109,6 +109,16 @@ nav a:hover {
     line-height: 1.4;
 }
 
+.card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card h3, .card p {
+    text-decoration: none !important;
+}
+
+
 /* BOTÓN WHATSAPP */
 .btn-whatsapp {
     background: #25D366 !important;
